@@ -43,8 +43,9 @@
         width: 100%;
         height: 320px;
         padding-bottom: 15px;
+      
     }
-    .show_item_img:hover{
+    .swiper-slide:hover{
       overflow:hidden;
     }
     .show_item_img img:hover{

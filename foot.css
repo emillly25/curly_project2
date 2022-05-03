@@ -179,10 +179,12 @@ font-size: 14px;
 
 /*****side banner *****/
 .side_banner{
-    position: fixed;
-    top: 30vh;
-    right: 20px;
-    z-index: 1;
+    position: absolute;
+    right: 10px;
+    top: 580px;
+    z-index: 1000;
+    transition: top 0.2s;
+    margin-top: 150px;
 }
 .side_banner img{
     width: 80px;

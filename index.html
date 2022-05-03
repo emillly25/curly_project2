@@ -16,6 +16,7 @@
     <script src="https://kit.fontawesome.com/5b31b338cb.js" crossorigin="anonymous"></script>
     <script defer src="nav.js"></script>
 <script  defer src="slider.js"></script>
+<script defer src="foot.js"></script>
 
 </head>
 <body>
@@ -28,16 +29,18 @@
                 <li><a class="head_bar2" href="#">로그인</a></li>
                 <li><a class="head_bar3" href="#">고객센터<i class="fa-solid fa-caret-down"></i></a>
                 </li>
+                <div class="customer_service">
+                  <div><a href="#">공지사항</a></div>
+                  <div><a href="#">자주하는 질문</a></div>
+                  <div><a href="#">1:1 문의</a></div>
+                  <div><a href="#">대량주문 문의</a></div>
+                  <div><a href="#">상품제안</a></div>
+                  <div><a href="#">에코포장 피드백</a></div>
+              </div>
             </ul>
         </div>
-        <ul class="customer_service">
-            <li><a href="#">공지사항</a></li>
-            <li><a href="#">자주하는 질문</a></li>
-            <li><a href="#">1:1 문의</a></li>
-            <li><a href="#">대량주문 문의</a></li>
-            <li><a href="#">상품제안</a></li>
-            <li><a href="#">에코포장 피드백</a></li>
-        </ul>
+        
+
         <div class="logo">
             <div class="logo_img"><img src="https://res.kurly.com/images/marketkurly/logo/logo_x2.png" alt="마켓컬리로고"></div>
         </div>
@@ -45,11 +48,30 @@
        
         <div class="menu">
             <div class="menu_bar">
-                <div id="dropdown"><i class="fa-solid fa-bars"></i><span>전체 카테고리</span></div>
-                <div><span class="border_bottom">신상품</span></div>
-                <div><span class="border_bottom">베스트</span></div>
-                <div><span class="border_bottom">알뜰쇼핑</span></div>
-                <div><span class="border_bottom">특가/혜택</span></div>
+                <div class="category">
+                  <i class="fa-solid fa-bars"></i><span>전체 카테고리</span>
+                  <div class="dropdown">
+                    <ul class="dropdown_menu">
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/category/icon/pc/4cac7e99-834d-4204-a1bf-40e822c32d3e"><span>2022 감사의 달</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_veggies_inactive_pc@2x.1586324570.png"><span>채소</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_fruit_inactive_pc@2x.1568684150.png"><span>과일·견과·쌀</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_seafood_inactive_pc@2x.1568684352.png"><span>수산·해산·건어물</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_meat_inactive_pc@2x.1568684452.png"><span>정육·계란</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_side_inactive_pc@2x.1572243579.png"><span>국·반찬·메인요리</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_convenient_inactive_pc@2x.1572243542.png"><span>샐러드·간편식</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_sauce_inactive_pc@2x.1572243594.png"><span>면·양념·오일</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_snacks_inactive_pc@2x.1572243615.png"><span>생수·음료·우유·커피</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_cookie_inactive_pc.1610074008.png"><span>간식·과자·떡</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_deli_inactive_pc@2x.1568687352.png"><span>베이커리·치즈·델리</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_health_inactive_pc@2x.1574645922.png"><span>건강식품</span></li>
+                        <li class="dropdown_li"><img src="https://img-cf.kurly.com/category/icon/pc/07c19040-34ad-49ff-924a-c5007fe0f7c8"><span>와인</span></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="ca"><span class="border_bottom">신상품</span></div>
+                <div class="ca"><span class="border_bottom">베스트</span></div>
+                <div class="ca"><span class="border_bottom">알뜰쇼핑</span></div>
+                <div class="ca"><span class="border_bottom">특가/혜택</span></div>
             </div>
 
             <div class="menu_search">
@@ -62,30 +84,13 @@
                 <div><img src="하트.svg"></div>
                 <div><img src="장바구니.svg"></div>
             </div>
+
+          
+
         </div>
     
-
-        <!--dropdown-->
       
-<div class="dropdown">
-    <ul class="dropdown_menu">
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/category/icon/pc/4cac7e99-834d-4204-a1bf-40e822c32d3e"><span>2022 감사의 달</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_veggies_inactive_pc@2x.1586324570.png"><span>채소</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_fruit_inactive_pc@2x.1568684150.png"><span>과일·견과·쌀</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_seafood_inactive_pc@2x.1568684352.png"><span>수산·해산·건어물</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_meat_inactive_pc@2x.1568684452.png"><span>정육·계란</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_side_inactive_pc@2x.1572243579.png"><span>국·반찬·메인요리</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_convenient_inactive_pc@2x.1572243542.png"><span>샐러드·간편식</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_sauce_inactive_pc@2x.1572243594.png"><span>면·양념·오일</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_snacks_inactive_pc@2x.1572243615.png"><span>생수·음료·우유·커피</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_cookie_inactive_pc.1610074008.png"><span>간식·과자·떡</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_deli_inactive_pc@2x.1568687352.png"><span>베이커리·치즈·델리</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/shop/data/category/icon_health_inactive_pc@2x.1574645922.png"><span>건강식품</span></li>
-        <li class="dropdown_li"><img src="https://img-cf.kurly.com/category/icon/pc/07c19040-34ad-49ff-924a-c5007fe0f7c8"><span>와인</span></li>
 
-
-    </ul>
-</div>
 </nav>
 
 

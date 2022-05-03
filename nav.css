@@ -10,7 +10,7 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    position:relative; 
+    /* position:relative;  */
     height: 100px;
     /* border: 2px solid seagreen; */
 }
@@ -46,6 +46,7 @@ body{
     padding-left:0;
     display:flex;
     margin-right: 12px;
+    position: relative;
 }
 .head_menu li{
     /* border: 1px solid pink; */
@@ -96,13 +97,11 @@ body{
 .customer_service{
     border: 1px solid #DDDDDD;
     font-size:12px;
-    list-style: none;
-    padding-left:0;
-    width: 100px;
-    height: 152px;
+    width: 102px;
+    height: 170px;
     position: absolute;
-    top: 25px;
-    right: 100px;
+    top: 40px;
+    left: 80px;
     background-color: #ffffff;
     display:none;
 }
@@ -110,13 +109,13 @@ body{
     text-decoration: none;
     color: #404040;
     display: inline-block;
-    width: 100px;
+    width: 102px;
     height: 24px;
     text-align: left;
     font-weight: 500;
-    padding-left: 5px;
-    padding-top: 2px;
     cursor: pointer;
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 
@@ -162,25 +161,34 @@ body{
     justify-content: center;
     width: 1903px;
     height: 56px;
-    position:sticky;
-    top:0;
+    position: relative;
 
 }
+
 
 .menu_bar{
-    /* border: solid 2px hotpink; */
+    /* border: 1px solid hotpink; */
     display: flex;
-    /* margin-right: 100px; */
+    align-items: center;
+    justify-content: space-around;
+    width: 600px;
+
 }
 
-.menu_bar div{
+.menu_bar .ca{
     /* border: 1px solid black; */
     height: 55px;
-    display:flex;
+    /* display:flex;
     align-items: center;
-    justify-content: center;
-    padding-top: 8px;
+    justify-content: center; */
+    
+    padding-top: 34px;
     /* padding-bottom: 16px; */
+}
+
+.ca:nth-child(3){
+    padding-left: 15px;
+    margin-left: 10px;
 }
 
 .menu_bar span{
@@ -205,16 +213,19 @@ body{
     font-size: 16px;
 }
 
-.menu_bar div:nth-child(1){
+.menu_bar .car:nth-child(1){
     width: 148px;
 }
 
-.menu_bar div:nth-child(2),.menu_bar div:nth-child(4) {
+.menu_bar .car:nth-child(2),.menu_bar div:nth-child(4) { /*알뜰쇼핑 */
     width: 124px;
+    display:flex;
+    justify-content: center;
 }
-
-.menu_bar div:nth-child(3),.menu_bar div:nth-child(5){
+.menu_bar .car:nth-child(3),.menu_bar div:nth-child(5){
     width: 116px;
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -270,17 +281,25 @@ body{
 
 
 /*dropdown*/
+
+.category{
+    /* border: 2px solid green; */
+    margin-right: 10px;
+}
 .dropdown{
     position: absolute;
-    top: 170px;
-    left: 130px;
+    top: 175px;
+    left: 140px;
     width: 202.333px;
     box-shadow: 1px;
     display:none;
     cursor: pointer;
     background-color: #ffffff;
     overflow-y: scroll;
+    z-index: 300;
 }
+
+
 
 .dropdown_menu{
     width: 202.333px;
