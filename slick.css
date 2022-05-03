@@ -1,0 +1,90 @@
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        margin-right: 0;
+        height: 450px;
+        text-align: center;
+        font-size: 18px;
+        /* border: 5px solid black; */
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .item{
+          /* border: 5px solid red; */
+          width: 267px;
+          height: 444px;
+      }
+    .show_item_img{
+        /* border: 1px solid blue; */
+        width: 100%;
+        height: 320px;
+        padding-bottom: 15px;
+    }
+    .show_item_img:hover{
+      overflow:hidden;
+    }
+    .show_item_img img:hover{
+        transform: scale(1.1);
+        transition: all 0.2s linear;
+
+    }
+
+    .show_item_name{
+        /* border: 1px solid green; */
+        width: 100%;
+        height: 24px;
+        text-align: left;
+        font-size: 16px;
+        line-height: 23.2px;
+        color: #333333;
+        margin-bottom: 5px;
+    }
+
+    .sale_price{
+        width:100%;
+        /* border: 1px solid brown; */
+        height: 24px;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 24px;
+        color: #333333;
+        text-align: left;
+    }
+
+    .sale_price span{
+        color: #FA622F;
+    }
+
+    .show_price{
+        width: 100%;
+        height: 20px;
+        /* border: 1px solid blue; */
+        text-align: left;
+        font-size: 14px;
+        color: #999999;
+        text-decoration: line-through solid rgb(153,153,153);
+    }
