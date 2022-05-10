@@ -11,6 +11,41 @@ const first_w = 0;
 const btn_prev = document.querySelectorAll('button')[0]
 const btn_next = document.querySelectorAll('button')[1]
 
+//btn slider
+
+function next(){
+    if(curPos < 5){   
+        positionValue -= img_width;
+        slides.style.transform = `translateX(${positionValue}vw )`;
+    }
+    curPos++
+    if(curPos == 6){  
+        curPos = 0
+        positionValue = 0;
+        slides.style.transform = `translateX(${positionValue}vw )`;
+    }
+}
+
+function prev(){
+    if(curPos > 0){
+        positionValue += img_width;
+        slides.style.transform = `translateX(${positionValue}vw )`;
+    }
+    curPos--
+    if(curPos == -1){
+        curPos = 5  
+        positionValue = -500;  
+        slides.style.transform = `translateX(${positionValue}vw )`
+    }
+}
+
+btn_next.addEventListener('click',next);
+btn_prev.addEventListener('click',prev);
+
+
+
+
+
 // auto slider 작동
 
     let setId = setInterval(() => {

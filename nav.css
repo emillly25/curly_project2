@@ -178,18 +178,17 @@ body{
 .menu_bar .ca{
     /* border: 1px solid black; */
     height: 55px;
-    /* display:flex;
+    display:flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     
-    padding-top: 34px;
     /* padding-bottom: 16px; */
 }
 
-.ca:nth-child(3){
+/* .ca:nth-child(3){
     padding-left: 15px;
     margin-left: 10px;
-}
+} */
 
 .menu_bar span{
     font-size: 16px;
@@ -198,7 +197,7 @@ body{
     display: inline-block;
 }
 
-.menu_bar #dropdown:hover{
+.menu_bar .ca:hover{
     color: #5f0080;
     cursor: pointer;
 }
@@ -213,16 +212,16 @@ body{
     font-size: 16px;
 }
 
-.menu_bar .car:nth-child(1){
+.menu_bar .ca:nth-child(1){
     width: 148px;
 }
 
-.menu_bar .car:nth-child(2),.menu_bar div:nth-child(4) { /*알뜰쇼핑 */
+.menu_bar .ca:nth-child(2),.menu_bar div:nth-child(4) { /*알뜰쇼핑 */
     width: 124px;
     display:flex;
     justify-content: center;
 }
-.menu_bar .car:nth-child(3),.menu_bar div:nth-child(5){
+.menu_bar .ca:nth-child(3),.menu_bar div:nth-child(5){
     width: 116px;
     display:flex;
     justify-content: center;
